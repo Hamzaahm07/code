@@ -17,18 +17,27 @@ public class Main {
         // Main program loop
         boolean running = true;
         while (running) {
-            // Create a list of neighbourhoods
+            // Create a list of neighborhoods
             LinkedList<Neighbourhood> neighborhoods = new LinkedList<>();
-            neighborhoods.add(new Neighbourhood("Downtown", 7.8, 1200000, 10));
-            neighborhoods.add(new Neighbourhood("Scarborough", 5.5, 850000, 6));
-            neighborhoods.add(new Neighbourhood("North York", 6.3, 950000, 8));
-            neighborhoods.add(new Neighbourhood("Etobicoke", 4.8, 880000, 7));
-            neighborhoods.add(new Neighbourhood("East York", 5.1, 790000, 5));
+            neighborhoods.add(new Neighbourhood("The Annex", 4.2, 1100000, 8));
+            neighborhoods.add(new Neighbourhood("The Beaches", 3.5, 1250000, 6));
+            neighborhoods.add(new Neighbourhood("Cabbagetown", 5.1, 950000, 7));
+            neighborhoods.add(new Neighbourhood("Yorkville", 6.7, 1500000, 9));
+            neighborhoods.add(new Neighbourhood("Kensington Market", 5.5, 850000, 5));
+            neighborhoods.add(new Neighbourhood("Distillery District", 4.9, 1000000, 8));
 
             // Get user preferences
             System.out.println("Welcome to 'Toronto: Your New Home'!");
             System.out.print("Enter your budget (CAD): ");
             double budget = scanner.nextDouble();
+
+            // Check if budget is too low
+            double minPrice = getMinimumPrice(neighborhoods);
+            if (budget < minPrice) {
+                System.out.println("\nUh oh! This budget is too low, unfortunately. Please try again with a higher budget.\n");
+                continue; // Restart the loop
+            }
+
             System.out.println("What's your top priority?");
             System.out.println("1. Low Crime Rate\n2. Affordable Housing\n3. Accessibility to Transit");
             System.out.print("Enter 1, 2, or 3: ");
@@ -100,5 +109,20 @@ public class Main {
             default:
                 return 0;
         }
+    }
+
+    /**
+     * Gets the minimum home price among all neighbourhoods.
+     * @param neighborhoods The list of neighbourhoods.
+     * @return The minimum home price.
+     */
+    public static double getMinimumPrice(LinkedList<Neighbourhood> neighborhoods) {
+        double minPrice = Double.MAX_VALUE;
+        for (Neighbourhood neighbourhood : neighborhoods) {
+            if (neighbourhood.getAverageHomePrice() < minPrice) {
+                minPrice = neighbourhood.getAverageHomePrice();
+            }
+        }
+        return minPrice;
     }
 }
