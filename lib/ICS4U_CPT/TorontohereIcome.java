@@ -3,7 +3,7 @@ package lib.ICS4U_CPT;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class Main {
+public class TorontohereIcome {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
