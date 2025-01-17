@@ -3,8 +3,9 @@ package lib.ICS4U_CPT;
 /**
  * author: Hamza Ahmed
  * date: 2025/01/15
- * Neighbourhoods in Toronto with stats; crime rate, average home price, and transit accessibility
-
+ * Neighbourhoods in Toronto with stats; crime rate, average home price, and
+ * transit accessibility
+ * 
  */
 
 public class Neighbourhood {
@@ -15,9 +16,10 @@ public class Neighbourhood {
 
     /**
      * Constructor for Neighbourhood class.
-     * @param name The name of the neighbourhood.
-     * @param crimeRate The crime rate per 1,000 people.
-     * @param averageHomePrice The average home price in CAD.
+     * 
+     * @param name                 The name of the neighbourhood.
+     * @param crimeRate            The crime rate per 1,000 people.
+     * @param averageHomePrice     The average home price in CAD.
      * @param transitAccessibility A rating out of 10 for transit accessibility.
      */
     public Neighbourhood(String name, double crimeRate, double averageHomePrice, int transitAccessibility) {
@@ -46,13 +48,14 @@ public class Neighbourhood {
 
     /**
      * Overrides toString() to provide a readable description of the neighbourhood.
+     * 
      * @return String description of the neighbourhood.
      */
     @Override
     public String toString() {
-        return "Neighbourhood: " + name + 
-               "\nCrime Rate: " + crimeRate + 
-               "\nAverage Home Price: $" + averageHomePrice + 
-               "\nTransit Accessibility: " + transitAccessibility + "/10\n";
+        return "Neighbourhood: " + name +
+                "\nCrime Rate: " + crimeRate +
+                "\nAverage Home Price: $" + averageHomePrice +
+                "\nTransit Accessibility: " + transitAccessibility + "/10\n";
     }
 }

@@ -122,10 +122,11 @@ public class TorontohereIcome {
     }
 
     // Method to find the best neighborhood based on user preferences
-    private static Neighbourhood findBestNeighbourhood(LinkedList<Neighbourhood> neighborhoods, UserPreferences preferences) {
+    private static Neighbourhood findBestNeighbourhood(LinkedList<Neighbourhood> neighborhoods,
+            UserPreferences preferences) {
         Neighbourhood bestMatch = null;
         double bestScore = -1; // Initialize with a low score
-        
+
         for (Neighbourhood neighborhood : neighborhoods) {
             // Check if the neighborhood is within budget
             if (neighborhood.getAverageHomePrice() <= preferences.getBudget()) {

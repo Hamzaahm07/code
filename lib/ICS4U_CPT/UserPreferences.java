@@ -3,7 +3,8 @@ package lib.ICS4U_CPT;
 /**
  * author: Hamza Ahmed
  * date: 2025/01/15
- * Stores user preferences e.g., budget and priority when analyzing each neighbourhood
+ * Stores user preferences e.g., budget and priority when analyzing each
+ * neighbourhood
  */
 
 public class UserPreferences {
@@ -12,7 +13,8 @@ public class UserPreferences {
 
     /**
      * Constructor for UserPreferences class.
-     * @param budget The user's budget in CAD.
+     * 
+     * @param budget   The user's budget in CAD.
      * @param priority The user's priority for selecting a neighbourhood.
      */
     public UserPreferences(double budget, int priority) {
