@@ -30,8 +30,8 @@ public class Main {
 
             // Ask the user what they want to do
             System.out.println("Would you like to:");
-            System.out.println("1. Find the best neighborhood for you.");
-            System.out.println("2. Learn more about a specific neighborhood.");
+            System.out.println("1. Find the best neighborhood for you");
+            System.out.println("2. Learn more about a specific neighborhood");
             System.out.print("Enter 1 or 2: ");
             int choice = scanner.nextInt();
             scanner.nextLine(); // Consume the newline character
