@@ -72,7 +72,7 @@ public class TorontohereIcome {
                 System.out.print("\nEnter the name of the neighborhood you'd like to learn about: ");
                 String neighborhoodName = scanner.nextLine();
 
-                // Find and display the neighborhood stats
+                // Find and display the neighbourhood stats
                 Neighbourhood foundNeighborhood = null;
                 for (Neighbourhood neighborhood : neighborhoods) {
                     if (neighborhood.getName().equalsIgnoreCase(neighborhoodName)) {
@@ -110,8 +110,8 @@ public class TorontohereIcome {
         scanner.close();
     }
 
-    // Method to get the minimum price of all neighborhoods
-    private static double getMinimumPrice(LinkedList<Neighbourhood> neighborhoods) {
+    // Make these methods public
+    public static double getMinimumPrice(LinkedList<Neighbourhood> neighborhoods) {
         double minPrice = Double.MAX_VALUE; // Start with the maximum possible value
         for (Neighbourhood neighborhood : neighborhoods) {
             if (neighborhood.getAverageHomePrice() < minPrice) {
@@ -121,8 +121,7 @@ public class TorontohereIcome {
         return minPrice;
     }
 
-    // Method to find the best neighborhood based on user preferences
-    private static Neighbourhood findBestNeighbourhood(LinkedList<Neighbourhood> neighborhoods,
+    public static Neighbourhood findBestNeighbourhood(LinkedList<Neighbourhood> neighborhoods,
             UserPreferences preferences) {
         Neighbourhood bestMatch = null;
         double bestScore = -1; // Initialize with a low score
@@ -137,7 +136,10 @@ public class TorontohereIcome {
                         score = 10 - neighborhood.getCrimeRate();
                         break;
                     case 2: // Priority: Affordable Housing
-                        score = (preferences.getBudget() - neighborhood.getAverageHomePrice()) / 100000; // Higher leftover budget = higher score
+                        score = (preferences.getBudget() - neighborhood.getAverageHomePrice()) / 100000; // Higher
+                                                                                                         // leftover
+                                                                                                         // budget =
+                                                                                                         // higher score
                         break;
                     case 3: // Priority: Transit Accessibility
                         score = neighborhood.getTransitAccessibility();
