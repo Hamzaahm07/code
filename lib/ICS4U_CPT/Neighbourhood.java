@@ -14,7 +14,7 @@ public class Neighbourhood {
     private int transitAccessibility; // Transit rating out of 10 based on accessibiliy and variety of transit options
 
     /**
-     * Constructor for Neighbourhood class.
+     * Constructor for Neighbourhood class
      * 
      * @param name                 The name of the neighbourhood
      * @param crimeRate            The crime rate per 1,000 people
