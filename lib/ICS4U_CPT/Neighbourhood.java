@@ -3,7 +3,8 @@ package lib.ICS4U_CPT;
 /**
  * author: Hamza Ahmed
  * date: 2025/01/15
- * Neighbourhoods in Toronto with stats; crime rate, average home price, andbtransit accessibility
+ * Neighbourhoods in Toronto with stats; crime rate, average home price,
+ * andbtransit accessibility
  */
 
 public class Neighbourhood {
@@ -46,6 +47,7 @@ public class Neighbourhood {
 
     /**
      * Overrides toString() to provide a readable description of the neighbourhood
+     * 
      * @return String description of the neighbourhood
      */
     @Override

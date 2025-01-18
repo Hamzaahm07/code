@@ -12,9 +12,9 @@ This interactive program was made using Java is designed to help users find the 
 - After completing program is done a task, users can restart the program from answering a prompt or exit with a friendly farewell message
 
 ## How to Run the Program  
-1. Open the project in a Java IDE like **VS Code**
-2. Make sure the project structure includes the package `lib.ICS4U_CPT`
-3. Run the `TorontohereIcome.java` file
+1. Open the project in VS Code
+2. Make sure the project includes the package called: `lib.ICS4U_CPT`
+3. Now run the `TorontohereIcome.java` file
 4. Follow the instructions on the console to interact with the program
 
 ## Known Issues or Limitations  
@@ -22,4 +22,4 @@ This interactive program was made using Java is designed to help users find the 
 - Stats may not not up to date in the ever changing city of Toronto
 
 ## Credits  
-Developed by: Hamza Ahmed
+Programmed by: Hamza Ahmed

@@ -82,11 +82,25 @@ public class TorontohereIcome {
                 }
 
                 if (foundNeighborhood != null) {
-                    System.out.println("\nHere are the stats for " + foundNeighborhood.getName() + ":"); //chatgpt assissted
+                    System.out.println("\nHere are the stats for " + foundNeighborhood.getName() + ":"); // chatgpt
+                                                                                                         // assissted
                     System.out.println(foundNeighborhood);
                 } else {
                     System.out.println(
-                            "\nSorry, no neighborhood by that name was found. Please check the spelling and try again."); //Error handling message if neighbourhood name isnt one of the ones on the list
+                            "\nSorry, no neighborhood by that name was found. Please check the spelling and try again."); // Error
+                                                                                                                          // handling
+                                                                                                                          // message
+                                                                                                                          // if
+                                                                                                                          // neighbourhood
+                                                                                                                          // name
+                                                                                                                          // isnt
+                                                                                                                          // one
+                                                                                                                          // of
+                                                                                                                          // the
+                                                                                                                          // ones
+                                                                                                                          // on
+                                                                                                                          // the
+                                                                                                                          // list
                 }
             } else {
                 System.out.println("\nInvalid choice. Please enter 1 or 2.");
@@ -123,7 +137,8 @@ public class TorontohereIcome {
     public static Neighbourhood findBestNeighbourhood(LinkedList<Neighbourhood> neighborhoods,
             UserPreferences preferences) {
         Neighbourhood bestMatch = null;
-        double bestScore = -1; // Initializes with a low score (chatgpt assissted me with this part of the code)
+        double bestScore = -1; //Initializes with a low score (chatgpt assissted me with this part of the
+                               // code)
 
         for (Neighbourhood neighborhood : neighborhoods) {
             // Checks if the neighborhood is within the users budget
@@ -135,7 +150,7 @@ public class TorontohereIcome {
                         score = 10 - neighborhood.getCrimeRate();
                         break;
                     case 2: // Priority: Affordable Housing
-                        score = (preferences.getBudget() - neighborhood.getAverageHomePrice()) / 100000; // Higher leftover budget = higher score
+                        score = (preferences.getBudget() - neighborhood.getAverageHomePrice()) / 100000; // (higher leftover budget means higher score)
                         break;
                     case 3: // Priority: Transit Accessibility
                         score = neighborhood.getTransitAccessibility();
@@ -143,7 +158,8 @@ public class TorontohereIcome {
                     default:
                         break;
                 }
-                // Keeps track of the best-scoring neighbourhood to let the user know in the end their best match (chatgpt assissted)
+                // Keeps track of the best-scoring neighbourhood to let the user know in the end
+                // their best match (chatgpt assissted)
                 if (score > bestScore) {
                     bestScore = score;
                     bestMatch = neighborhood;
