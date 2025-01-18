@@ -11,10 +11,10 @@ public class UserPreferences {
     private int priority; // Priority: 1 = Low Crime, 2 = Low Price, 3 = High Transit
 
     /**
-     * Constructor for UserPreferences class.
+     * Constructor for this class 
      * 
-     * @param budget   The user's budget in CAD.
-     * @param priority The user's priority for selecting a neighbourhood.
+     * @param budget   The user's budget in CAD
+     * @param priority The user's priority for selecting a neighbourhood
      */
     public UserPreferences(double budget, int priority) {
         this.budget = budget;

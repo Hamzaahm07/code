@@ -8,17 +8,17 @@ package lib.ICS4U_CPT;
 
 public class Neighbourhood {
     private String name;
-    private double crimeRate; // Crime rate per 1,000 people
+    private double crimeRate; // Crime rate per 1,000 people in that neighbourhood
     private double averageHomePrice; // Average home price in CAD
-    private int transitAccessibility; // Transit rating out of 10
+    private int transitAccessibility; // Transit rating out of 10 based on accessibiliy and variety of transit options
 
     /**
      * Constructor for Neighbourhood class.
      * 
-     * @param name                 The name of the neighbourhood.
-     * @param crimeRate            The crime rate per 1,000 people.
-     * @param averageHomePrice     The average home price in CAD.
-     * @param transitAccessibility A rating out of 10 for transit accessibility.
+     * @param name                 The name of the neighbourhood
+     * @param crimeRate            The crime rate per 1,000 people
+     * @param averageHomePrice     The average home price in CAD
+     * @param transitAccessibility A rating out of 10 for transit accessibility
      */
     public Neighbourhood(String name, double crimeRate, double averageHomePrice, int transitAccessibility) {
         this.name = name;
@@ -45,9 +45,8 @@ public class Neighbourhood {
     }
 
     /**
-     * Overrides toString() to provide a readable description of the neighbourhood.
-     * 
-     * @return String description of the neighbourhood.
+     * Overrides toString() to provide a readable description of the neighbourhood
+     * @return String description of the neighbourhood
      */
     @Override
     public String toString() {

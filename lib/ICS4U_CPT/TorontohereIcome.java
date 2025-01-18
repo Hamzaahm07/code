@@ -46,7 +46,7 @@ public class TorontohereIcome {
                 if (budget < minPrice) {
                     System.out.println(
                             "\nUh oh! This budget is too low, unfortunately. Please try again with a higher budget.\n");
-                    continue; // Restarts the loop
+                    continue; // Restarts the loop -chatgpt assissted
                 }
 
                 System.out.println("What's your top priority?");
@@ -82,7 +82,7 @@ public class TorontohereIcome {
                 }
 
                 if (foundNeighborhood != null) {
-                    System.out.println("\nHere are the stats for " + foundNeighborhood.getName() + ":");
+                    System.out.println("\nHere are the stats for " + foundNeighborhood.getName() + ":"); //chatgpt assissted
                     System.out.println(foundNeighborhood);
                 } else {
                     System.out.println(
@@ -123,7 +123,7 @@ public class TorontohereIcome {
     public static Neighbourhood findBestNeighbourhood(LinkedList<Neighbourhood> neighborhoods,
             UserPreferences preferences) {
         Neighbourhood bestMatch = null;
-        double bestScore = -1; // Initializes with a low score
+        double bestScore = -1; // Initializes with a low score (chatgpt assissted me with this part of the code)
 
         for (Neighbourhood neighborhood : neighborhoods) {
             // Checks if the neighborhood is within the users budget
@@ -143,7 +143,7 @@ public class TorontohereIcome {
                     default:
                         break;
                 }
-                // Keeps track of the best-scoring neighbourhood to let the user know in the end their best match
+                // Keeps track of the best-scoring neighbourhood to let the user know in the end their best match (chatgpt assissted)
                 if (score > bestScore) {
                     bestScore = score;
                     bestMatch = neighborhood;
