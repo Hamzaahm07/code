@@ -3,12 +3,11 @@ package lib.ICS4U_CPT;
 /**
  * author: Hamza Ahmed
  * date: 2025/01/15
- * Stores user preferences e.g., budget and priority when analyzing each
- * neighbourhood
+ * Stores user preferences e.g., budget and priority when analyzing each neighbourhood
  */
 
 public class UserPreferences {
-    private double budget; // User's budget in CAD
+    private double budget; // The users budget in CAD (assuming Canadians are running this program)
     private int priority; // Priority: 1 = Low Crime, 2 = Low Price, 3 = High Transit
 
     /**

@@ -3,9 +3,7 @@ package lib.ICS4U_CPT;
 /**
  * author: Hamza Ahmed
  * date: 2025/01/15
- * Neighbourhoods in Toronto with stats; crime rate, average home price, and
- * transit accessibility
- * 
+ * Neighbourhoods in Toronto with stats; crime rate, average home price, andbtransit accessibility
  */
 
 public class Neighbourhood {
